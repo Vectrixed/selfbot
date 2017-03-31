@@ -1,0 +1,19 @@
+{
+  "name": "selfbot",
+  "version": "0.0.0",
+  "description": "This is my selfbot lol.",
+  "main": "./src/Ona.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Vectrixed/selfbot.git"
+  },
+  "author": "Vectrixed",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Vectrixed/selfbot/issues"
+  },
+  "homepage": "https://github.com/Vectrixed/selfbot#readme"
+}
