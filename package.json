@@ -4,10 +4,10 @@
   "description": "This is my selfbot lol.",
   "main": "src/Ona.js",
   "scripts": {
-    "lint": "eslint src/",
-    "start": "node src/Ona.js",
+    "lint": "eslint ./src/",
+    "start": "node ./src/Ona.js",
     "test": "npm run lint && npm start",
-		"pm2": ""
+		"pm2": "pm2 start src/Ona.js --name selfbot"
 		},
   "repository": {
     "type": "git",
@@ -16,7 +16,7 @@
   "keywords": [
     "selfbot",
     "silvano",
-		"classes"
+    "classes"
 ],
   "author": "Vectrixed",
   "license": "MIT",
