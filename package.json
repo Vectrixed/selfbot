@@ -4,16 +4,43 @@
   "description": "This is my selfbot lol.",
   "main": "src/Ona.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+    "lint": "eslint src/",
+    "start": "node src/Ona.js",
+    "test": "npm run lint && npm start",
+		"pm2": ""
+		},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Vectrixed/selfbot.git"
   },
+  "keywords": [
+    "selfbot",
+    "silvano",
+		"classes"
+],
   "author": "Vectrixed",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/Vectrixed/selfbot/issues"
   },
-  "homepage": "https://github.com/Vectrixed/selfbot#readme"
+  "homepage": "https://github.com/Vectrixed/selfbot#readme",
+  "dependencies": {
+		"bluebird": "^3.5.0",
+		"common-tags": "^1.4.0",
+		"lamu": "^0.1.0",
+		"node-fetch": "^1.6.3",
+		"file-type": "^4.1.0",
+    "discord.js": "github:hydrabolt/discord.js",
+    "eslint": "^3.19.0"
+    },
+  "devDependencies": {
+    "eslint": "^3.18.0",
+    "eslint-config-aqua": "^1.1.0"
+  },
+  "eslintConfig": {
+    "extends": "aqua"
+  },
+  "engines": {
+    "node": ">=7.6.0"
+  }
 }

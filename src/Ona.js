@@ -1,4 +1,11 @@
-const { Client } = require('./structures/SilvanoClient.js' );
-const client = new Client();
+global.Promise = require('bluebird');
 
-client.login('token');
+const config = require('../config');
+const SilvanoClient = require('./structures/SilvanoClient.js');
+
+const client = new SilvanoClient({
+	prefix: config.prefix,
+	commandsDir: config.commands,
+});
+
+client.login(config.token);
